@@ -1,0 +1,5 @@
+#  occ_counts_before = {("A",0):0,("C",0):0,("G",0):0,("T",0):0,("$",0):0}
+My original data structure to store occurrences of each character was like above, and it turned out it used too much memory.
+so I switched to above, which saves more spaces.
+In the above, characters were repeated multiple time, while it only appears one time in the following method.
+#  occ_counts_before = {"A":{0:0},"C":{0:0},"G":{0:0},"T":{0:0},"$":{0:0}}
